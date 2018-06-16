@@ -1,17 +1,17 @@
-package com.luglobal.contest.service;
+package com.keji.contest.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
-import com.luglobal.contest.config.UserContext;
-import com.luglobal.contest.dao.UserIdentityDao;
-import com.luglobal.contest.enums.ImageCategory;
-import com.luglobal.contest.enums.ResultCode;
-import com.luglobal.contest.model.*;
-import com.luglobal.contest.model.req.*;
-import com.luglobal.contest.model.resp.BioDetectResp;
-import com.luglobal.contest.model.resp.HFaceCompareResp;
-import com.luglobal.contest.utils.*;
+import com.keji.contest.config.UserContext;
+import com.keji.contest.dao.UserIdentityDao;
+import com.keji.contest.enums.ImageCategory;
+import com.keji.contest.enums.ResultCode;
+import com.keji.contest.model.*;
+import com.keji.contest.model.req.*;
+import com.keji.contest.model.resp.BioDetectResp;
+import com.keji.contest.model.resp.HFaceCompareResp;
+import com.keji.contest.utils.*;
 import com.pingan.pama.protocol.SignUtils;
 import com.pingan.pama.protocol.encrypt.AESUtils;
 import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;

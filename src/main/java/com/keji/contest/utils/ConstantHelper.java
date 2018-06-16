@@ -1,4 +1,4 @@
-package com.luglobal.contest.utils;
+package com.keji.contest.utils;
 
 import java.io.File;
 import java.util.HashMap;

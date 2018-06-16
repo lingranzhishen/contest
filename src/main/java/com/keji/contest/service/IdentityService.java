@@ -1,18 +1,18 @@
-package com.luglobal.contest.service;
+package com.keji.contest.service;
 
 
 import com.alibaba.fastjson.JSON;
-import com.luglobal.contest.config.UserContext;
-import com.luglobal.contest.dao.ImgInfoDao;
-import com.luglobal.contest.dao.UserIdentityDao;
-import com.luglobal.contest.enums.IdentityStatusEnums;
-import com.luglobal.contest.enums.ImgTypeEnums;
-import com.luglobal.contest.enums.ResultCode;
-import com.luglobal.contest.exception.CommonException;
-import com.luglobal.contest.gson.*;
-import com.luglobal.contest.model.ImgInfoDTO;
-import com.luglobal.contest.model.UserDTO;
-import com.luglobal.contest.model.UserIdentityDTO;
+import com.keji.contest.config.UserContext;
+import com.keji.contest.dao.ImgInfoDao;
+import com.keji.contest.dao.UserIdentityDao;
+import com.keji.contest.enums.IdentityStatusEnums;
+import com.keji.contest.enums.ImgTypeEnums;
+import com.keji.contest.enums.ResultCode;
+import com.keji.contest.exception.CommonException;
+import com.keji.contest.gson.*;
+import com.keji.contest.model.ImgInfoDTO;
+import com.keji.contest.model.UserDTO;
+import com.keji.contest.model.UserIdentityDTO;
 import org.apache.catalina.startup.UserConfig;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

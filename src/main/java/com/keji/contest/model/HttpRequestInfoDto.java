@@ -1,4 +1,4 @@
-package com.luglobal.contest.model;
+package com.keji.contest.model;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,4 +1,4 @@
-package com.luglobal.contest.model;
+package com.keji.contest.model;
 public class QualityTerminal{
     private String brightness;
     private String blur_motion;

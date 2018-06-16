@@ -1,12 +1,12 @@
-package com.luglobal.contest.api;
+package com.keji.contest.api;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.luglobal.contest.gson.FaceLoginReqGson;
-import com.luglobal.contest.gson.IntlResultGson;
-import com.luglobal.contest.model.UserDTO;
-import com.luglobal.contest.service.AuthenticationService;
-import com.luglobal.contest.service.UserService;
+import com.keji.contest.gson.FaceLoginReqGson;
+import com.keji.contest.gson.IntlResultGson;
+import com.keji.contest.model.UserDTO;
+import com.keji.contest.service.AuthenticationService;
+import com.keji.contest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,7 @@
-package com.luglobal.contest.gson;
+package com.keji.contest.gson;
 
 
-import com.luglobal.contest.enums.ResultCode;
+import com.keji.contest.enums.ResultCode;
 
 public class IntlResultGson<T> {
     private String res_code;

@@ -1,6 +1,6 @@
-package com.luglobal.contest.model.req;
+package com.keji.contest.model.req;
 
-import com.luglobal.contest.utils.ConstantHelper;
+import com.keji.contest.utils.ConstantHelper;
 
 /**
  * Created by fengfei754 on 7/25/16.

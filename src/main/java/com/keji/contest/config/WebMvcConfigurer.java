@@ -1,4 +1,4 @@
-package com.luglobal.contest.config;
+package com.keji.contest.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

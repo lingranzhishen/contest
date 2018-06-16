@@ -1,6 +1,6 @@
-package com.luglobal.contest.dao;
+package com.keji.contest.dao;
 
-import com.luglobal.contest.model.UserDTO;
+import com.keji.contest.model.UserDTO;
 
 /**
  * Created by lizehua035 on 2018/6/9.

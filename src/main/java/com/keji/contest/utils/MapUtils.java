@@ -1,4 +1,4 @@
-package com.luglobal.contest.utils;
+package com.keji.contest.utils;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.util.CollectionUtils;

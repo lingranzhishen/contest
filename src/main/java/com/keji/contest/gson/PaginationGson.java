@@ -1,4 +1,4 @@
-package com.luglobal.contest.gson;
+package com.keji.contest.gson;
 
 import java.util.List;
 

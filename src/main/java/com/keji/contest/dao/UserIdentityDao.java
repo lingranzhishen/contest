@@ -1,6 +1,6 @@
-package com.luglobal.contest.dao;
+package com.keji.contest.dao;
 
-import com.luglobal.contest.model.UserIdentityDTO;
+import com.keji.contest.model.UserIdentityDTO;
 
 import java.util.List;
 import java.util.Map;

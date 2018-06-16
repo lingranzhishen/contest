@@ -1,4 +1,4 @@
-package com.luglobal.contest.model.req;
+package com.keji.contest.model.req;
 
 public class FaceCompareParamDto {
     private String terminalType;// String 是 64 标识终端设备类型 微创新大赛:Pc

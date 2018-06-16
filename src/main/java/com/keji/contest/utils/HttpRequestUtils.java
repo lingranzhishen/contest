@@ -1,7 +1,7 @@
-package com.luglobal.contest.utils;
+package com.keji.contest.utils;
 
 
-import com.luglobal.contest.model.HttpRequestInfoDto;
+import com.keji.contest.model.HttpRequestInfoDto;
 import org.apache.commons.lang.StringUtils;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;

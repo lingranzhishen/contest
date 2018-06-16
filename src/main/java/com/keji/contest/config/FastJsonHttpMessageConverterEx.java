@@ -1,4 +1,4 @@
-package com.luglobal.contest.config;
+package com.keji.contest.config;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 

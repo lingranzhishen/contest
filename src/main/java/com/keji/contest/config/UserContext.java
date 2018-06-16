@@ -1,6 +1,6 @@
-package com.luglobal.contest.config;
+package com.keji.contest.config;
 
-import com.luglobal.contest.model.UserDTO;
+import com.keji.contest.model.UserDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

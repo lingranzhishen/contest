@@ -1,4 +1,4 @@
-package com.luglobal.contest.utils;
+package com.keji.contest.utils;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package com.luglobal.contest.enums;
+package com.keji.contest.enums;
 
 /**
  * 标识图片类别 标识图片类别 (1 -手机自拍照片， 2-身份证照片，  3-护照片，默认 1)

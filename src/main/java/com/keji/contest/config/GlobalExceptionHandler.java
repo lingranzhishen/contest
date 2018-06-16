@@ -1,9 +1,9 @@
-package com.luglobal.contest.config;
+package com.keji.contest.config;
 
 
-import com.luglobal.contest.enums.ResultCode;
-import com.luglobal.contest.exception.CommonException;
-import com.luglobal.contest.gson.IntlResultGson;
+import com.keji.contest.enums.ResultCode;
+import com.keji.contest.exception.CommonException;
+import com.keji.contest.gson.IntlResultGson;
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

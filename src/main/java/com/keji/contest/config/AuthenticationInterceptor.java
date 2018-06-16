@@ -1,15 +1,15 @@
-package com.luglobal.contest.config;
+package com.keji.contest.config;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.luglobal.contest.annotation.LoginRequired;
-import com.luglobal.contest.enums.ResultCode;
-import com.luglobal.contest.exception.CommonException;
-import com.luglobal.contest.model.UserDTO;
-import com.luglobal.contest.service.UserService;
+import com.keji.contest.annotation.LoginRequired;
+import com.keji.contest.enums.ResultCode;
+import com.keji.contest.exception.CommonException;
+import com.keji.contest.model.UserDTO;
+import com.keji.contest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;

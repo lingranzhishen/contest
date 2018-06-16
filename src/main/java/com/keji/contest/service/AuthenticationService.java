@@ -1,8 +1,8 @@
-package com.luglobal.contest.service;
+package com.keji.contest.service;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.luglobal.contest.model.UserDTO;
+import com.keji.contest.model.UserDTO;
 import org.springframework.stereotype.Service;
 
 import java.io.UnsupportedEncodingException;

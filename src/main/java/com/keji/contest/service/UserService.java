@@ -1,8 +1,8 @@
-package com.luglobal.contest.service;
+package com.keji.contest.service;
 
 
-import com.luglobal.contest.dao.UserDao;
-import com.luglobal.contest.model.UserDTO;
+import com.keji.contest.dao.UserDao;
+import com.keji.contest.model.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

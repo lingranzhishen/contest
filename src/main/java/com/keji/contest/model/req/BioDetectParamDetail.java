@@ -1,4 +1,4 @@
-package com.luglobal.contest.model.req;
+package com.keji.contest.model.req;
 
 public class BioDetectParamDetail {
 

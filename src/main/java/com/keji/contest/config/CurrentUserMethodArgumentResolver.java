@@ -1,7 +1,7 @@
-package com.luglobal.contest.config;
+package com.keji.contest.config;
 
-import com.luglobal.contest.annotation.CurrentUser;
-import com.luglobal.contest.model.UserDTO;
+import com.keji.contest.annotation.CurrentUser;
+import com.keji.contest.model.UserDTO;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;

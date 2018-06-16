@@ -1,4 +1,4 @@
-package com.luglobal.contest.model.resp;
+package com.keji.contest.model.resp;
 
 public class BioResultData {
 

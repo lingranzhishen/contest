@@ -1,4 +1,4 @@
-package com.luglobal.contest.enums;
+package com.keji.contest.enums;
 
 
 /**

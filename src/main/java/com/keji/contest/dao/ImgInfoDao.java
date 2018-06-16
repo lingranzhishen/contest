@@ -1,6 +1,6 @@
-package com.luglobal.contest.dao;
+package com.keji.contest.dao;
 
-import com.luglobal.contest.model.ImgInfoDTO;
+import com.keji.contest.model.ImgInfoDTO;
 
 /**
  * Created by lizehua035 on 2018/6/9.

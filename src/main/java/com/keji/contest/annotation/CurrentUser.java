@@ -1,4 +1,4 @@
-package com.luglobal.contest.annotation;
+package com.keji.contest.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

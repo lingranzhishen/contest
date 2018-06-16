@@ -1,12 +1,12 @@
-package com.luglobal.contest.api;
+package com.keji.contest.api;
 
 
-import com.luglobal.contest.annotation.LoginRequired;
-import com.luglobal.contest.gson.IdentityApproveGson;
-import com.luglobal.contest.gson.IdentityListReqGson;
-import com.luglobal.contest.gson.IntlResultGson;
-import com.luglobal.contest.model.UserDTO;
-import com.luglobal.contest.service.IdentityService;
+import com.keji.contest.annotation.LoginRequired;
+import com.keji.contest.gson.IdentityApproveGson;
+import com.keji.contest.gson.IdentityListReqGson;
+import com.keji.contest.gson.IntlResultGson;
+import com.keji.contest.model.UserDTO;
+import com.keji.contest.service.IdentityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

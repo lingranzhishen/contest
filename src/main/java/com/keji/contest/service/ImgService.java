@@ -1,12 +1,12 @@
-package com.luglobal.contest.service;
+package com.keji.contest.service;
 
 
-import com.luglobal.contest.dao.ImgInfoDao;
-import com.luglobal.contest.enums.ResultCode;
-import com.luglobal.contest.exception.CommonException;
-import com.luglobal.contest.gson.IntlResultGson;
-import com.luglobal.contest.model.ImgInfoDTO;
-import com.luglobal.contest.utils.ConstantHelper;
+import com.keji.contest.dao.ImgInfoDao;
+import com.keji.contest.enums.ResultCode;
+import com.keji.contest.exception.CommonException;
+import com.keji.contest.gson.IntlResultGson;
+import com.keji.contest.model.ImgInfoDTO;
+import com.keji.contest.utils.ConstantHelper;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
