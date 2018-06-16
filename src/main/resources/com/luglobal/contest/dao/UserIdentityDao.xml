@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.luglobal.contest.dao.UserIdentityDao">
+    <resultMap id="BaseResultMap" type="com.luglobal.contest.model.UserIdentityDTO">
+        <result column="id" property="id" jdbcType="BIGINT"/>
+        <result column="created_at" property="createdAt" jdbcType="TIMESTAMP"/>
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR"/>
+        <result column="passport_img_id" property="passportImgId" jdbcType="BIGINT"/>
+        <result column="hand_img_id" property="handImgId" jdbcType="BIGINT"/>
+        <result column="face_img_id" property="faceImgId" jdbcType="BIGINT"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="memo" property="memo" jdbcType="VARCHAR"/>
+        <result column="base_img_id" property="baseImgId" jdbcType="BIGINT"/>
+        <result column="user_id" property="userId" jdbcType="BIGINT"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, created_at, created_by, passport_img_id, hand_img_id, face_img_id, status, memo,
+        base_img_id,user_id
+    </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap"
+            parameterType="com.luglobal.contest.model.UserIdentityDTO">
+        select
+        <include refid="Base_Column_List"/>
+        from tb_user_identity
+        where id =#{id}
+    </select>
+    <insert id="insert" parameterType="com.luglobal.contest.model.UserIdentityDTO">
+        insert into tb_user_identity (created_at, created_by, passport_img_id, hand_img_id,
+        face_img_id, status, memo, base_img_id,user_id)
+        values (#{createdAt},#{createdBy},#{passportImgId},#{handImgId},
+        #{faceImgId},#{status},#{memo},#{baseImgId},#{userId})
+        <selectKey resultType="java.lang.Long" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+    <update id="updateSelective" parameterType="com.luglobal.contest.model.UserIdentityDTO">
+        update tb_user_identity
+        <set>
+            <if test="createdAt!=null">
+                created_at =#{createdAt},
+            </if>
+            <if test="createdBy!=null">
+                created_by =#{createdBy},
+            </if>
+            <if test="passportImgId!=null">
+                passport_img_id =#{passportImgId},
+            </if>
+            <if test="handImgId!=null">
+                hand_img_id =#{handImgId},
+            </if>
+            <if test="faceImgId!=null">
+                face_img_id =#{faceImgId},
+            </if>
+            <if test="status!=null">
+                status =#{status},
+            </if>
+            <if test="memo!=null">
+                memo =#{memo},
+            </if>
+            <if test="baseImgId!=null">
+                base_img_id =#{baseImgId},
+            </if>
+        </set>
+        where id =#{id}
+    </update>
+
+    <select id="countUserIdentity" resultType="long">
+        select
+        count(1)
+        from tb_user_identity
+    </select>
+
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from tb_user_identity
+        where user_id =#{{userId}
+    </select>
+
+    <select id="listIdentity" resultMap="BaseResultMap" parameterType="com.luglobal.contest.model.UserIdentityDTO">
+        select
+        a.*,b.username
+        from tb_user_identity a left join tb_user b
+        on a.user_id=b.user_id
+        order by id desc LIMIT #{offset},#{limit}
+    </select>
+</mapper>

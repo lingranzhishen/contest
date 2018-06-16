@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.luglobal.contest.dao.ImgInfoDao" >
+  <select id="selectById" resultType="com.luglobal.contest.model.ImgInfoDTO" >
+    select 
+    *
+    from tb_img_info
+    where id =#{id}
+  </select>
+  <insert id="insert">
+    insert into tb_img_info (path, pic_size, height, width, created_at,
+      created_by, type,origin_name,pingan_id)
+    values (#{path},#{picSize},#{height},#{width},#{createdAt},
+      #{createdBy},#{type},#{originName}，#{pinganId},#{imgExtInfo})
+    <selectKey resultType="java.lang.Long" keyProperty="id" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.luglobal.contest.model.ImgInfoDTO" >
+    update tb_img_info
+    set path =#{path},
+      pic_size =#{picSize},
+      height =#{height},
+      width =#{width},
+      created_at =#{createdAt},
+      created_by =#{createdBy},
+    pingan_id =#{pinganId},
+    img_ext_info =#{imgExtInfo},
+      type =#{type}
+    where id =#{id}
+  </update>
+</mapper>

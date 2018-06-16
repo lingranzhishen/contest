@@ -1,0 +1,10 @@
+/.project
+/.idea
+/.settings
+/contest
+/target
+/log
+.idea
+target
+.setting
+*.iml

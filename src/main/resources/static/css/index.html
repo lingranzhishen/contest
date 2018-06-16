@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="gb2312" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>$(title)</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+    }
+    .main {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .header {
+      overflow: hidden;
+      margin-top: 14px;
+      background: #F3F3F3;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      width: 50%;
+      vertical-align: middle;
+    }
+    td img {
+      width: 100%;
+    }
+    .logo {
+      margin-left: 8.8%;
+      width: 60%;
+    }
+    .icon {
+      margin-right: 8.4%;
+      text-align: right;
+    }
+    .icon img {
+      width: 38%;
+	  position: relative;
+	  top: 3px;
+    }
+    .bar img {
+      width: 100%;
+    }
+    .content {
+      padding: 4.5% 4.4% 3%;
+      min-height: 213px
+    }
+    .name {
+      font-size: 24px;
+      color: #2F3A40;
+      margin-bottom: 9px;
+    }
+    .text {
+      font-size: 18px;
+      color: #2F3A40;
+    }
+	.text2{
+      font-size: 18px;
+      color: #9DACB6;
+      text-align: center;
+      margin: 1% auto 0%;
+    }
+    .code {
+      color: #FC7946;
+    }
+    .footer {
+      border-top: 1px solid #D8D8D8;
+      background: #F3F3F3;
+      padding: 5% 9.2%;
+      text-align: center;
+      color: #6E818D;
+      font-size: 18px;
+      line-height: 1.83;
+    }
+    .unsub-link {
+      text-align: left;
+        font-size: 18px;
+        margin: 1%;
+      }
+
+    @media screen and (max-width: 500px) {
+      .logo {
+        width: 80%;
+      }
+      .icon img {
+        width: 50%;
+      }
+	  .content{
+        padding-bottom:4%;
+      }
+      .name {
+        font-size: 18px;
+      }
+      .text {
+        font-size: 14px;
+      }
+	  .text2{
+        font-size: 14px;
+        margin: 1% auto 0%;
+      }
+      .footer {
+        font-size: 14px;
+      }
+      .unsub-link {
+        text-align: left;
+        font-size: 14px;
+        margin: 1% 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <table>
+        <tr>
+          <td>
+            <div class="logo"><img src="images/lufax_log.png"></div>
+          </td>
+          <td>
+            <div class="icon"><img src="images/edm_logo.png"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="bar"><img src="images/arrow.png"></div>
+    <div class="content">
+      <div class="text">$(content)</div>
+    </div>
+    <div class="footer">
+      <div class="unsub-link"><a href="http://h5.lu-tech.cn/h5-intl/email#/">邮件退订</a></div>
+      <div class="text2">$(reminder)</div>
+      <div>$(footer) </div>
+    </div>
+  </div>
+</body>
+</html>

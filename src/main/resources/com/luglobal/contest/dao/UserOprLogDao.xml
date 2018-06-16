@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.luglobal.contest.dao.UserOprLogDao" >
+  <resultMap id="BaseResultMap" type="com.luglobal.contest.model.UserOprLogDTO" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="created_at" property="createdAt" jdbcType="TIMESTAMP" />
+    <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+    <result column="operator_type" property="operatorType" jdbcType="VARCHAR" />
+    <result column="result" property="result" jdbcType="VARCHAR" />
+    <result column="memo" property="memo" jdbcType="VARCHAR" />
+    <result column="biz_no" property="bizNo" jdbcType="VARCHAR" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="device" property="device" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="img_ids" property="imgIds" jdbcType="VARCHAR" />
+    <result column="score" property="score" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, created_at, created_by, operator_type, result, memo, biz_no, ip, device, user_id, 
+    user_name, img_ids, score
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_user_opr_log
+    where id = #{id}#
+  </select>
+  <insert id="insert" parameterType="com.luglobal.contest.model.UserOprLogDTO">
+    insert into tb_user_opr_log (created_at, created_by, operator_type, result, 
+      memo, biz_no, ip, device, user_id, 
+      user_name, img_ids, score)
+    values (#{createdAt}#,#{createdBy}#,#{operatorType}#,#{result}#,
+      #{memo}#,#{bizNo}#,#{ip}#,#{device}#,#{userId}#,
+      #{userName}#,#{imgIds}#,#{score}#)
+    <selectKey resultType="java.lang.Long" keyProperty="id" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.luglobal.contest.model.UserOprLogDTO" >
+    update tb_user_opr_log
+    set created_at = #{createdAt}#,
+      created_by = #{createdBy}#,
+      operator_type = #{operatorType}#,
+      result = #{result}#,
+      memo = #{memo}#,
+      biz_no = #{bizNo}#,
+      ip = #{ip}#,
+      device = #{device}#,
+      user_id = #{userId}#,
+      user_name = #{userName}#,
+      img_ids = #{imgIds}#,
+      score = #{score}#
+    where id = #{id}#
+  </update>
+</mapper>
