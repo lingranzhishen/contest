@@ -1,5 +1,6 @@
 spring:
   profiles: default
+  servier.port: 8080
   datasource:
     url: jdbc:mysql://localhost:3306/contest?useUnicode=true&characterEncoding=utf8&autoReconnect=true
     username: root
@@ -12,11 +13,11 @@ mybatis:
 ---
 spring:
   profiles: pro
+  servier.port: 80
   datasource:
     url: jdbc:mysql://localhost:3306/contest?useUnicode=true&characterEncoding=utf8&autoReconnect=true
     username: root
     password: password
-debug: true
 mybatis:
   type-aliases-package: com.keji.contest.model
   config-location: classpath:mybatis.xml
