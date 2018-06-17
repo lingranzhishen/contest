@@ -222,7 +222,7 @@ var taskDetail = {
     },
     methods:{
     approve:function (status) {
-    var memo = document.getElementById("memo");
+    var memo = document.getElementById("memo").value;
     axios.post('/api/identity/approve',
                     {
                        userId:this.task.userId,result:status,memo:memo
