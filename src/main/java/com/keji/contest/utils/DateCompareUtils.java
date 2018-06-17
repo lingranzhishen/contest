@@ -25,21 +25,21 @@ public class DateCompareUtils {
         return result;
     }
 
-    public static void main(String[] args) {
-        Calendar instance = Calendar.getInstance();
-        instance.add(Calendar.HOUR_OF_DAY,10);
-        Date upper = instance.getTime();
-
-        Calendar instance1 = Calendar.getInstance();
-        instance1.add(Calendar.HOUR_OF_DAY,-10);
-        Date lower = instance1.getTime();
-
-        Date date = new Date();
-        boolean betweenRange = DateCompareUtils.isBetweenRange(upper,null , date);
-        System.err.println(new Date());
-        System.err.println(upper);
-        System.err.println(lower);
-        System.err.println("是否处于时间区间内："+betweenRange);
-    }
+//    public static void main(String[] args) {
+//        Calendar instance = Calendar.getInstance();
+//        instance.add(Calendar.HOUR_OF_DAY,10);
+//        Date upper = instance.getTime();
+//
+//        Calendar instance1 = Calendar.getInstance();
+//        instance1.add(Calendar.HOUR_OF_DAY,-10);
+//        Date lower = instance1.getTime();
+//
+//        Date date = new Date();
+//        boolean betweenRange = DateCompareUtils.isBetweenRange(upper,null , date);
+//        System.err.println(new Date());
+//        System.err.println(upper);
+//        System.err.println(lower);
+//        System.err.println("是否处于时间区间内："+betweenRange);
+//    }
 
 }

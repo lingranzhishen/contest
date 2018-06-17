@@ -1,4 +1,4 @@
-package com.luglobal.contest;
+package com.keji.contest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
