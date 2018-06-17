@@ -27,8 +27,7 @@ public class ImgService {
     private ImgInfoDao imgInfoDao;
 
     public ImgInfoDTO insertImg(ImgInfoDTO img) {
-        Long id=imgInfoDao.insert(img);
-        img.setId(id);
+        imgInfoDao.insert(img);
         return img;
     }
 

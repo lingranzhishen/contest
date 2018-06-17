@@ -9,9 +9,9 @@
   </select>
   <insert id="insert">
     insert into tb_img_info (path, pic_size, height, width, created_at,
-      created_by, type,origin_name,pingan_id)
+      created_by, type,origin_name,pingan_id,img_ext_info)
     values (#{path},#{picSize},#{height},#{width},#{createdAt},
-      #{createdBy},#{type},#{originName}，#{pinganId},#{imgExtInfo})
+      #{createdBy},#{type},#{originName},#{pinganId},#{imgExtInfo})
     <selectKey resultType="java.lang.Long" keyProperty="id" >
       SELECT LAST_INSERT_ID()
     </selectKey>
