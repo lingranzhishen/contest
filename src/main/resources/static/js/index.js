@@ -175,7 +175,7 @@ var SignupForm = {
                 return false
             }
             axios.post('/api/user', {
-                name: this.name,
+                username: this.name,
                 password: this.password
             }).then(function (res) {
                 if (res.data.error) {

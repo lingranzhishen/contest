@@ -11,7 +11,7 @@ mybatis:
 
 ---
 spring:
-  profiles: release
+  profiles: default
   datasource:
     url: jdbc:mysql://localhost:3306/contest?useUnicode=true&characterEncoding=utf8&autoReconnect=true
     username: qa

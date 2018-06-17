@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.luglobal.contest.dao.ImgInfoDao" >
-  <select id="selectById" resultType="com.luglobal.contest.model.ImgInfoDTO" >
+<mapper namespace="com.keji.contest.dao.ImgInfoDao" >
+  <select id="selectById" resultType="com.keji.contest.model.ImgInfoDTO" >
     select 
     *
     from tb_img_info
@@ -16,7 +16,7 @@
       SELECT LAST_INSERT_ID()
     </selectKey>
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.luglobal.contest.model.ImgInfoDTO" >
+  <update id="updateByPrimaryKey" parameterType="com.keji.contest.model.ImgInfoDTO" >
     update tb_img_info
     set path =#{path},
       pic_size =#{picSize},

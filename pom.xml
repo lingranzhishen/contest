@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.luglobal.contest</groupId>
-	<artifactId>lu-global-passport</artifactId>
+	<groupId>com.keji.contest</groupId>
+	<artifactId>keji-passport</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-blog</name>
-	<description>contest for lu-global</description>
+	<name>keji-passport</name>
+	<description>contest</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

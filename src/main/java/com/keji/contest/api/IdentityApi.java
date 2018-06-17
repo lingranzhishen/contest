@@ -5,7 +5,6 @@ import com.keji.contest.annotation.LoginRequired;
 import com.keji.contest.gson.IdentityApproveGson;
 import com.keji.contest.gson.IdentityListReqGson;
 import com.keji.contest.gson.IntlResultGson;
-import com.keji.contest.model.UserDTO;
 import com.keji.contest.service.IdentityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,28 +18,28 @@ public class IdentityApi {
 
     @LoginRequired
     @PostMapping("add")
-    public Object add(@RequestParam("param") String param) throws Exception{
+    public Object add(@RequestParam("param") String param) {
         IntlResultGson result= identityService.addTask(param);
         return result;
     }
 
     @LoginRequired
     @PostMapping("list")
-    public Object list( @RequestBody(required = false)IdentityListReqGson req) throws Exception{
+    public Object list( @RequestBody(required = false)IdentityListReqGson req) {
         IntlResultGson result= identityService.listTask(req);
         return result;
     }
 
     @LoginRequired
     @RequestMapping(method = RequestMethod.POST, value = "/{id:.+}")
-    public Object detail(@PathVariable Long id) throws Exception{
+    public Object detail(@PathVariable Long id) {
         IntlResultGson result= identityService.detail(id);
         return result;
     }
 
     @LoginRequired
     @PostMapping("approve")
-    public Object approve(@RequestBody IdentityApproveGson req) throws Exception{
+    public Object approve(@RequestBody IdentityApproveGson req) {
         IntlResultGson result= identityService.approveIdentity(req);
         return result;
     }

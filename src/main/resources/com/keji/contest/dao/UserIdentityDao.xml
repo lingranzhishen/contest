@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.luglobal.contest.dao.UserIdentityDao">
-    <resultMap id="BaseResultMap" type="com.luglobal.contest.model.UserIdentityDTO">
+<mapper namespace="com.keji.contest.dao.UserIdentityDao">
+    <resultMap id="BaseResultMap" type="com.keji.contest.model.UserIdentityDTO">
         <result column="id" property="id" jdbcType="BIGINT"/>
         <result column="created_at" property="createdAt" jdbcType="TIMESTAMP"/>
         <result column="created_by" property="createdBy" jdbcType="VARCHAR"/>
@@ -19,13 +19,13 @@
         base_img_id,user_id
     </sql>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap"
-            parameterType="com.luglobal.contest.model.UserIdentityDTO">
+            parameterType="com.keji.contest.model.UserIdentityDTO">
         select
         <include refid="Base_Column_List"/>
         from tb_user_identity
         where id =#{id}
     </select>
-    <insert id="insert" parameterType="com.luglobal.contest.model.UserIdentityDTO">
+    <insert id="insert" parameterType="com.keji.contest.model.UserIdentityDTO">
         insert into tb_user_identity (created_at, created_by, passport_img_id, hand_img_id,
         face_img_id, status, memo, base_img_id,user_id)
         values (#{createdAt},#{createdBy},#{passportImgId},#{handImgId},
@@ -34,7 +34,7 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
     </insert>
-    <update id="updateSelective" parameterType="com.luglobal.contest.model.UserIdentityDTO">
+    <update id="updateSelective" parameterType="com.keji.contest.model.UserIdentityDTO">
         update tb_user_identity
         <set>
             <if test="createdAt!=null">
@@ -78,7 +78,7 @@
         where user_id =#{{userId}
     </select>
 
-    <select id="listIdentity" resultMap="BaseResultMap" parameterType="com.luglobal.contest.model.UserIdentityDTO">
+    <select id="listIdentity" resultMap="BaseResultMap" parameterType="com.keji.contest.model.UserIdentityDTO">
         select
         a.*,b.username
         from tb_user_identity a left join tb_user b

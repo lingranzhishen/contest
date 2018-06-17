@@ -19,8 +19,7 @@ public class UserApi {
     }
 
     @PostMapping("")
-    public Object add(@RequestParam("param")String param) {
-        UserDTO user= JSON.parseObject(param,UserDTO.class);
+    public Object add(@RequestBody UserDTO user) {
         if (userService.findByName(user.getUsername()) != null) {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("error","用户名已被使用");
