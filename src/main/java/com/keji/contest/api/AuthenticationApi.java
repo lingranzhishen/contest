@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.keji.contest.gson.FaceLoginReqGson;
 import com.keji.contest.gson.IntlResultGson;
 import com.keji.contest.model.UserDTO;
+import com.keji.contest.model.req.LoginReq;
 import com.keji.contest.service.AuthenticationService;
 import com.keji.contest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,10 @@ public class AuthenticationApi {
     @PostMapping("authentication")
     public Object login(@RequestParam(value = "param", required = false) String param, @RequestBody(required = false) UserDTO user) {
         if (param != null) {
-            user = JSON.parseObject(param, UserDTO.class);
+            LoginReq req = JSON.parseObject(param, LoginReq.class);
+            user=new UserDTO();
+            user.setUsername(req.getUserName());
+            user.setPassword(req.getPassword());
         }
         UserDTO userInDataBase = userService.findByName(user.getUsername());
         JSONObject jsonObject = new JSONObject();
