@@ -11,6 +11,8 @@ import com.keji.contest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.URLDecoder;
+
 @RestController
 @RequestMapping("/api/")
 public class AuthenticationApi {
@@ -26,6 +28,7 @@ public class AuthenticationApi {
     @PostMapping("authentication")
     public Object login(@RequestParam(value = "param", required = false) String param, @RequestBody(required = false) UserDTO user) {
         if (param != null) {
+            param=URLDecoder.decode(param);
             LoginReq req = JSON.parseObject(param, LoginReq.class);
             user=new UserDTO();
             user.setUsername(req.getUserName());

@@ -23,6 +23,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URLDecoder;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDate;
@@ -38,6 +39,8 @@ public class IdentityService {
 
 
     public IntlResultGson addTask(String param) {
+        param=URLDecoder.decode(param);
+
         IntlResultGson gson = new IntlResultGson();
         IdentityReqGson req = JSON.parseObject(param, IdentityReqGson.class);
         UserDTO user = UserContext.getUser();
